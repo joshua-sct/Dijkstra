@@ -1,5 +1,5 @@
 # Dijkstra
-Prepatory class 1 project: a free program calculate the shortest path in a graph
+Prepatory class 1 project: a free program to calculate the shortest path in a graph
 
 
 This repository contains Linux and Windows executables.
