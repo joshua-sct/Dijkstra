@@ -19,7 +19,7 @@ float[][] valuation (float[][] source, int mSize, int edges)
 }
 
 
-int[] djikstra(float[][] source, int s, int S)
+int[] Dijkstra(float[][] source, int s, int S)
 {
   //int s = 0;                 //s the starting vertex (S-1)
   //int S = 6;                 //S the number of vertexes
