@@ -68,7 +68,7 @@ void draw()
   switch(menu) {
   case 0:             // first screen
     println("first");   
-    text("DJIKSTRA", width/3, height/5);  //title
+    text("Dijkstra", width/3, height/5);  //title
     text("Choose what action to do", width/4, (2*height)/5);                    //question
     create_graph.display();                                                            //available cases
     read_graph.display();
@@ -97,7 +97,7 @@ void draw()
     menu = 0;
     break;
   case 2: 
-    println("read");   //read djikstra's shortest paths
+    println("read");   //read Dijkstra's shortest paths
     if(nVertexes == 0)
     {
       nVertexes = askInteger("Number of vertexes ? ~ points");
@@ -106,9 +106,9 @@ void draw()
     }
     float[][] edges = read_graph();
     //valuation(edges, nVertexes, nEdges);
-    //djikstra(valuation(edges, nVertexes, nEdges));
-    //predecesseur(djikstra(valuation(edges, nVertexes, nEdges)));
-    graphic = djikstra(valuation(edges, nVertexes, nEdges), start, nVertexes);
+    //Dijkstra(valuation(edges, nVertexes, nEdges));
+    //predecesseur(Dijkstra(valuation(edges, nVertexes, nEdges)));
+    graphic = Dijkstra(valuation(edges, nVertexes, nEdges), start, nVertexes);
     draw_predecessor(graphic);
     go_back.display();
     if(go_back.pushed())
@@ -124,7 +124,7 @@ void draw()
     text("along with build & install instructions.", width/15, (2.7*height)/5);
     text("Source : https://tldrlegal.com/license/gnu-general-public-license-v3-(gpl-3)", width/15, (3*height)/5);
     text("Written by Joshua Sacchet on 2020.04, keyboard interactions' code provided by unilim, file interactions' model come from", width/15, (3.5*height)/5);
-    text("processing.org/reference/ and djikstra's algorithm was implemented thanks to some explanations on supinfo.com", width/15, (3.7*height)/5);
+    text("processing.org/reference/ and Dijkstra's algorithm was implemented thanks to some explanations on supinfo.com", width/15, (3.7*height)/5);
     
     GNUGPL.display();
     if(GNUGPL.pushed())
